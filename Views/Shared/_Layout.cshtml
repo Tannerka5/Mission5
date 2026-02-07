@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Monster Hunter Wilds Academy</title>
+    <link rel="icon" type="image/jpeg" href="~/favicon.jpg">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <h1>⚔️ MONSTER HUNTER WILDS ACADEMY ⚔️</h1>
+        <nav class="nav-menu">
+            <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-area="" asp-controller="Home" asp-action="Calculator">Tutoring Calculator</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Monster Hunter Wilds Academy. All rights reserved.</p>
+        <div class="footer-divider"></div>
+        <p>Built by <strong>Tanner Anderson</strong> | Hunter & Developer</p>
+        <p>Monster Hunter Wilds and Monster Hunter are trademarks of CAPCOM CO., LTD.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="~/js/calculator.js" asp-append-version="true"></script>
+</body>
+</html>
